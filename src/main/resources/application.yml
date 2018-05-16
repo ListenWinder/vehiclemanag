@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=VEHECLE_MANAGE_DATA
+    username: sa
+    password: bobadmin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
